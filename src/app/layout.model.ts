@@ -5,7 +5,7 @@ export class Layout {
     public title: string,
     public id: number,
     public body: string,
-    public post_image: string,
+    public img: string,
     public contact: string,
     )  {}
 

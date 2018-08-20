@@ -1,7 +1,25 @@
-<div *ngFor="let layout of layoutToDisplay">
+<div class="nav">
+  <h4>CL</h4>
+</div>
 
+<div class="sections">
+
+<div class="side-nav">
+ <h3>groups</h3>
+  <ul>
+    <li>stuff</li>
+    <li>stuff</li>
+    <li>stuff</li>
+    <li>stuff</li>
+  </ul>
+</div>
+
+
+
+
+<div class="post" *ngFor="let layout of layoutToDisplay" (click)="goToDetailPage(layout)">  
   <h2>{{ layout.title }}</h2>
-
-<p>hello</p>
+    <img src="{{ layout.img }}" alt="Cinque Terre">
 </div> 
  
+</div>

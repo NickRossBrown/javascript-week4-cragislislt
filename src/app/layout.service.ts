@@ -17,9 +17,17 @@ export class LayoutService {
             if (LAYOUTS[i].section == section) {
                 array.push(LAYOUTS[i]);
             }
-           
         }
         return array;
     }
+
+    getPostById(postId: number) {
+        for (var i = 0; i <= LAYOUTS.length - 1; i++) {
+            if (LAYOUTS[i].id === postId) {
+                return LAYOUTS[i];
+            }
+        }
+    }
+
 
 }

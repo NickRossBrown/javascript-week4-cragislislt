@@ -1,0 +1,22 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.sections{
+    display: grid;
+    grid-template-columns: 1fr 5fr
+}
+.nav {
+ justify-content: flex-start;
+ height: 100px;
+ width: 100%; 
+}
+
+.side-nav {
+    grid-column: 1;
+}
+
+.post {
+    grid-column: 2;
+}

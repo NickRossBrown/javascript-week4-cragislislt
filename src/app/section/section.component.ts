@@ -19,4 +19,9 @@ export class SectionComponent implements OnInit {
     this.layoutToDisplay = this.layoutService.getLayoutBySection(this.router.url);
   }
 
+  goToDetailPage(clickedLayout) {
+    this.router.navigate(['post', clickedLayout.id]);
+  }
+
+
 };

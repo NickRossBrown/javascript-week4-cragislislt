@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SectionComponent } from './section/section.component';
-
+import { PostComponent } from "./post/post.component";
 
 const appRoutes: Routes = [
   {
@@ -10,12 +10,16 @@ const appRoutes: Routes = [
   component: HomeComponent
   },
   {
-    path: ':community',
+    path: 'community',
     component: SectionComponent
   },
   {
-    path: ':service',
+    path: 'service',
   component: SectionComponent
+  },
+  {
+    path: 'post/:id',
+    component: PostComponent
   }
 ];
 
