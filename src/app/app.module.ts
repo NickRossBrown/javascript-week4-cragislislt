@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CommunityComponent } from './community/community.component';
 import { SectionComponent } from './section/section.component';
 import { PostComponent } from './post/post.component';
 
@@ -12,7 +11,6 @@ import { PostComponent } from './post/post.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CommunityComponent,
     SectionComponent,
     PostComponent
   ],

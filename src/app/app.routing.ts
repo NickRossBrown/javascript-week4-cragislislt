@@ -10,8 +10,12 @@ const appRoutes: Routes = [
   component: HomeComponent
   },
   {
-    path: 'section',
+    path: ':community',
     component: SectionComponent
+  },
+  {
+    path: ':service',
+  component: SectionComponent
   }
 ];
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Layout} from '../layout.model';
-
 import { Router } from '@angular/router';
 import { LayoutService } from '../layout.service';
 
@@ -19,8 +18,10 @@ export class HomeComponent implements OnInit {
     this.layouts = this.layoutService.getLayouts();
   }
 
-  goToSectionPage(clickedLayout: Layout) {
-    this.router.navigate(['d', clickedLayout.section]);
+  goToSectionPage() {
+    console.log("clicked")
+    this.router.navigate(['service', 5 ])
+    // this.router.navigate['/community'], { queryParams: { sections: 'popular' } };
   };
 
 }

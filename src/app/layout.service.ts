@@ -11,12 +11,15 @@ export class LayoutService {
         return LAYOUTS;
     }
 
-    getLayoutById(layoutId: number) {
+    getLayoutBySection(section) {
+        let array = []
         for (var i = 0; i <= LAYOUTS.length - 1; i++) {
-            if (LAYOUTS[i].id === layoutId) {
-                return LAYOUTS[i];
+            if (LAYOUTS[i].section == section) {
+                array.push(LAYOUTS[i]);
             }
+           
         }
+        return array;
     }
 
 }
